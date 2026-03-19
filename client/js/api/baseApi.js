@@ -2,7 +2,8 @@
 // API BASE CONFIGURATION
 // =========================
 // Base URL for backend API
-const BASE_URL = "http://127.0.0.1:5000";
+// const BASE_URL = "http://127.0.0.1:5000";
+const BASE_URL = "https://pilot-flight-planning-system.onrender.com";
 
 // =========================
 // GENERIC API REQUEST HELPER

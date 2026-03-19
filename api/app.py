@@ -13,8 +13,14 @@ app = Flask(__name__)
 # =========================
 # CORS CONFIGURATION
 # =========================
-CORS(app, resources={r"/*": {"origins": "*"}})
-
+CORS(app, resources={
+    r"/*": {
+        "origins": [
+            "http://localhost:3000",
+            "https://your-frontend.vercel.app"
+        ]
+    }
+})
 # =========================
 # REGISTER BLUEPRINTS
 # =========================
