@@ -22,8 +22,11 @@ CORS(app, resources={
     }
 })
 # =========================
-# REGISTER BLUEPRINTS
+#  BLUEPRINTS
 # =========================
+@app.route("/")
+def home():
+    return {"status": "ok", "message": "Pilot Flight Planning System API is running"}
 app.register_blueprint(game_bp)
 app.register_blueprint(location_bp)
 
