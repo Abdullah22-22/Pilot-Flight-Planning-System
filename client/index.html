@@ -3,22 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <title>Private Jet Game</title>
-
-  <link rel="stylesheet" href="../css/main.css" />
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 <body>
 
   <div class="app-layout">
-
-    <!-- LEFT SIDE: CONTROL + INFO -->
     <div class="left-panel">
-
-      <!-- CONTROLS CARD -->
       <div class="card controls-card">
         <h3>🎮 Controls</h3>
       </div>
 
-      <!-- INFO CARD -->
       <div id="infoPanel" class="card info-panel">
         <h3>✈️ Flight Info</h3>
 
@@ -61,10 +55,8 @@
           <span id="infoCanLand">-</span>
         </div>
       </div>
-
     </div>
 
-    <!-- RIGHT SIDE: MAP -->
     <div class="map-card">
       <div class="map-topbar">
         <div class="map-badge">Private Jet Simulator</div>
@@ -72,7 +64,7 @@
 
       <svg id="map" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
         <image
-          href="../public/assets/map.svg"
+          href="./public/assets/map.svg"
           x="0"
           y="0"
           width="1200"
@@ -84,9 +76,8 @@
         <g id="planes-layer"></g>
       </svg>
     </div>
-
   </div>
 
-  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="./js/main.js"></script>
 </body>
 </html>
