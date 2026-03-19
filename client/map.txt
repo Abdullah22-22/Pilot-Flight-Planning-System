@@ -1,0 +1,41 @@
+private_jet_frontend/
+│
+├── index.html
+│
+├── public/
+│   └── assets/
+│       ├── map.svg
+│       └── plane.svg
+│
+├── css/
+│   ├── main.css
+│   └── map.css
+│
+├── js/
+│   ├── api/
+│   │   ├── baseApi.js
+│   │   ├── gameApi.js
+│   │   ├── airportApi.js
+│   │   └── pilotApi.js
+        └──locationApi.js
+│   │
+│   ├── core/
+│   │   ├── tripStatus.js
+│   │   └── gameLoop.js
+│   │
+│   ├── map/
+│   │   ├── mapConfig.js
+│   │   ├── mapUtils.js
+│   │   ├── mapRenderer.js
+│   │   └── mapController.js
+│   │    
+│   │
+│   ├── ui/
+│   │   ├── controls.js
+│   │   └── selectors.js
+        └── controlPanel.js
+│   │
+│   └── main.js
+    └── location.js
+│
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Select Location</title>
+  <link rel="stylesheet" href="../css/location.css" />
+</head>
+<body>
+
+  <!-- START MENU -->
+  <div id="startMenu" class="game-menu-overlay">
+    <div class="game-menu-card">
+      <h1>✈️ Private Jet Game</h1>
+      <p>Start your journey</p>
+      <button id="startGameBtn">Start</button>
+      <button id="exitGameBtn">Exit</button>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div id="mainContent" class="hidden">
+    <h2>Select Country</h2>
+
+    <!-- Search -->
+    <input
+      type="text"
+      id="countrySearch"
+      placeholder="Search country..."
+    />
+
+    <!-- Continent Filter -->
+    <select id="continentFilter">
+      <option value="ALL">All Continents</option>
+      <option value="EU">Europe</option>
+      <option value="AS">Asia</option>
+      <option value="AF">Africa</option>
+      <option value="NA">North America</option>
+      <option value="SA">South America</option>
+      <option value="OC">Oceania</option>
+    </select>
+
+    <!-- Countries -->
+    <div id="countryGrid" class="country-grid"></div>
+
+    <!-- Airports -->
+    <div id="airportSection" style="display:none;">
+      <h3 id="airportTitle"></h3>
+      <p id="selectionModeText">Choose departure airport</p>
+      <div id="airportGrid" class="airport-grid"></div>
+    </div>
+  </div>
+
+  <script type="module" src="../js/start-menu.js"></script>
+  <script type="module" src="../js/location.js"></script>
+</body>
+</html>

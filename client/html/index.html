@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Private Jet Game</title>
+
+  <link rel="stylesheet" href="../css/main.css" />
+</head>
+<body>
+
+  <div class="app-layout">
+
+    <!-- LEFT SIDE: CONTROL + INFO -->
+    <div class="left-panel">
+
+      <!-- CONTROLS CARD -->
+      <div class="card controls-card">
+        <h3>🎮 Controls</h3>
+      </div>
+
+      <!-- INFO CARD -->
+      <div id="infoPanel" class="card info-panel">
+        <h3>✈️ Flight Info</h3>
+
+        <div class="info-row">
+          <span>Status</span>
+          <span id="infoStatus">-</span>
+        </div>
+
+        <div class="info-row">
+          <span>Plane</span>
+          <span id="infoPlane">-</span>
+        </div>
+
+        <div class="info-row">
+          <span>Fuel</span>
+          <span id="infoFuel">-</span>
+        </div>
+
+        <hr />
+
+        <div class="info-row">
+          <span>Current Leg</span>
+          <span id="infoLeg">-</span>
+        </div>
+
+        <div class="info-row">
+          <span>Total Legs</span>
+          <span id="infoTotalLegs">-</span>
+        </div>
+
+        <div class="info-row">
+          <span>Destination</span>
+          <span id="infoDestination">-</span>
+        </div>
+
+        <hr />
+
+        <div class="info-row">
+          <span>Can Land</span>
+          <span id="infoCanLand">-</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: MAP -->
+    <div class="map-card">
+      <div class="map-topbar">
+        <div class="map-badge">Private Jet Simulator</div>
+      </div>
+
+      <svg id="map" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid meet">
+        <image
+          href="../public/assets/map.svg"
+          x="0"
+          y="0"
+          width="1200"
+          height="600"
+          style="pointer-events:none"
+        />
+        <g id="routes-layer"></g>
+        <g id="airports-layer"></g>
+        <g id="planes-layer"></g>
+      </svg>
+    </div>
+
+  </div>
+
+  <script type="module" src="../js/main.js"></script>
+</body>
+</html>
