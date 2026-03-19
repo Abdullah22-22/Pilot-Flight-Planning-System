@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_cors import CORS
 
-# from routes.pilot_routes import pilot_bp
 from routes.game_routes import game_bp
 from routes.Location_Routes import location_bp
 from services.game_loop import start_game_loop
@@ -19,7 +18,6 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 # =========================
 # REGISTER BLUEPRINTS
 # =========================
-# app.register_blueprint(pilot_bp)
 app.register_blueprint(game_bp)
 app.register_blueprint(location_bp)
 
