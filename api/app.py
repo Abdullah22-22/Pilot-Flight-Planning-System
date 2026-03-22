@@ -21,6 +21,9 @@ CORS(app, resources={
         ]
     }
 })
+
+# CORS(app, resources={r"/*": {"origins": "*"}})
+
 # =========================
 #  BLUEPRINTS
 # =========================
