@@ -34,4 +34,5 @@ export async function handleTripCompletion(trip, pilotId) {
   sessionStorage.removeItem("pendingDestination");
 
   window.location.href = "../html/location.html";
+     window.location.href = "/client/location.html";
 }

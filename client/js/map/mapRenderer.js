@@ -35,7 +35,7 @@ export function drawPlane(lat, lon, heading = 0) {
   if (!plane) {
     plane = document.createElementNS("http://www.w3.org/2000/svg", "image");
     plane.setAttribute("id", "plane-icon");
-    plane.setAttribute("href", "../public/assets/plane.svg");
+    plane.setAttribute("href", "./public/assets/plane.svg");
     plane.setAttribute("width", 30);
     plane.setAttribute("height", 30);
 
