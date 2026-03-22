@@ -124,7 +124,8 @@ function renderAirports(country, airports) {
       );
 
       // window.location.href = "../index.html";
-      window.location.href = "/client/index.html";
+      // window.location.href = "/client/index.html";
+       window.location.href = "/index.html";
     };
 
 
