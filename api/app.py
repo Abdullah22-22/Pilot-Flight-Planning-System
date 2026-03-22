@@ -7,17 +7,21 @@ from services.game_loop import start_game_loop
 
 app = Flask(__name__)
 
+allowed_origins = [
+    "http://localhost:3000",
+    "http://localhost:5500",
+    "http://127.0.0.1:3000",
+    "http://127.0.0.1:5500",
+    "https://pilot-flight-planning-system.vercel.app",
+    "https://pilot-flight-planning-system-14ahqbglv-abs-projects-05ca1b34.vercel.app",
+]
+
 CORS(
     app,
-    resources={r"/*": {"origins": [
-        "http://localhost:3000",
-        "http://localhost:5500",
-        "http://127.0.0.1:3000",
-        "http://127.0.0.1:5500",
-        "https://pilot-flight-planning-system.vercel.app"
-    ]}},
+    resources={r"/*": {"origins": allowed_origins}},
     methods=["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allow_headers=["Content-Type", "Authorization"]
+    allow_headers=["Content-Type", "Authorization"],
+    supports_credentials=True
 )
 
 @app.route("/")
