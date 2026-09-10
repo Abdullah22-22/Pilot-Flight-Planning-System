@@ -19,7 +19,25 @@
 <br/><br/>
 
 <!-- ضع لقطة شاشة للعبة هنا / Add a gameplay screenshot here -->
-<img src="screenshot.png" alt="Gameplay" width="90%"/>
+<img src="screenshots/gameplay.png" alt="Gameplay — cockpit view and world map" width="90%"/>
+
+</div>
+
+---
+
+## Screenshots
+
+<div align="center">
+
+**Country and airport selection** — every country with airports in the database, searchable and filterable by continent.
+
+<img src="screenshots/country-select.png" alt="Country selection screen" width="85%"/>
+
+<br/>
+
+**A planned route** — green is the departure airport, black is an automatically inserted refuelling stop, red is the final destination. The aircraft moves along the orange line in real time.
+
+<img src="screenshots/route-map.png" alt="Planned route with a refuelling stop" width="85%"/>
 
 </div>
 
